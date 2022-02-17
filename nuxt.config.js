@@ -32,7 +32,24 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/fontawesome',
   ],
+
+  fontawesome: {
+    icons: {
+      regular: ["faEnvelope"],
+      brands: [
+        "faFacebook",
+        "faFacebookF",
+        "faFacebookMessenger",
+        "faInstagram",
+        "faTwitter",
+        "faWhatsapp",
+        "faPinterest",
+        "faTelegramPlane"
+      ]
+    }
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
