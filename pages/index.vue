@@ -1,16 +1,16 @@
 <template>
 <div>
-  <nav class="flex justify-center">
-    <NuxtLink to="/">Page accueil</NuxtLink> |
-    <NuxtLink to="/about">test</NuxtLink>
-  </nav>
-  <Home/>
+  <Navigation />
+  <Header />
 </div>
 
 </template>
 
 <script>
+import header from '~/components/header.vue'
+import navigation from '~/components/navigation.vue'
 export default {
+  components: { navigation, header },
   name: 'IndexPage',
 }
 </script>
