@@ -1,17 +1,19 @@
 <template>
 <div>
-  <Header />
+  <HeaderMobile />
   <Navigation />
+  <FooterMobile />
 </div>
 
 </template>
 
 <script>
-import header from '~/components/header.vue'
+import headerMobile from '~/components/headerMobile.vue'
 import navigation from '~/components/navigation.vue'
+import footerMobile from '~/components/footerMobile.vue'
 export default {
-  components: { navigation, header },
   name: 'IndexPage',
+  components: { navigation, headerMobile, footerMobile },
 }
 </script>
 
