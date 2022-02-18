@@ -19,7 +19,7 @@
     </div>
   </div>
 
-  <div class="mt-6 md:flex space-x-6">
+  <div class="mt-6 md:flex space-x-6 ">
     <div class="shadow-md">
       <img src="https://images.unsplash.com/photo-1497493292307-31c376b6e479?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="" />
       <div class="px-4">
@@ -33,7 +33,7 @@
       </div>
     </div>
 
-    <div class="shadow-md">
+    <div class="shadow-md ">
       <img src="https://images.unsplash.com/photo-1497493292307-31c376b6e479?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="" />
       <div class="px-6">
         <h1 class="mt-3 text-gray-800 text-2xl font-bold my-2">long established</h1>
