@@ -1,6 +1,6 @@
 <template>
 <div>
-
+  <h1>salut le monde</h1>
 </div>
 
 </template>
@@ -9,7 +9,7 @@
 
 export default {
   name: 'IndexPage',
-  components: { },
+  components: {},
 }
 </script>
 
