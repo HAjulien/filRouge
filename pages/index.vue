@@ -1,15 +1,17 @@
 <template>
 <div>
-  <h1>salut le monde</h1>
+  <Features/>
 </div>
 
 </template>
 
 <script>
 
+import features from '~/components/features.vue'
+
 export default {
   name: 'IndexPage',
-  components: {},
+  components: { features },
 }
 </script>
 

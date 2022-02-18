@@ -1,5 +1,5 @@
 <template>
-    <header class="headerMobile flex justify-between items-end px-2 bg-gray-600">
+    <header class="headerMobile flex justify-between items-center px-2 bg-gray-600 h-16">
       <img src="~/assets/images/test.png" class="w-24 h-10" />
        <span class="profil bg-red-500 w-36 flex justify-center items-center rounded-xl mt-2">
         <nuxt-link to=""> <svg 

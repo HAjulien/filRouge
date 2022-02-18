@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'carouselHome',
+  name: 'CarouselHome',
 }
 </script>
 

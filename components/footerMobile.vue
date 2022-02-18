@@ -1,5 +1,5 @@
 <template>
-    <footer class="footerMobile px-2 bg-gray-200 ">
+    <footer class="footerMobile px-2 bg-gray-200 mt-1 ">
 
         <p class="text-center"> nous suivre sur :</p>
         <ul class=" flex justify-around">
@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  name: 'footerMobile',
+  name: 'FooterMobile',
 }
 </script>
 
