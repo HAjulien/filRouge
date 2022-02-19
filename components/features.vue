@@ -5,13 +5,14 @@
 <main class="py-12 md:px-20 sm:px-14 px-6">
   <div class="sm:flex items-center shadow-md">
 
-    <div class="md:px-10 sm:px-5">
+    <div class="md:px-10 sm:px-5 p-2">
       <h1 class="text-gray-800 font-bold text-2xl my-2">long established</h1>
       <p class="text-gray-700 mb-2 md:mb-6">
           It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that....
       </p>
-      <div class="flex justify-between mb-2">
-        <span class="sm:block hidden mb-2 text-gray-800 font-bold">Read more</span>
+      <div class="flex justify-between mb-2 items-center pb-2">
+        <span class=" mb-2 text-gray-800 font-bold">Read more</span>
+        <button class="p-2 pl-5 pr-5 bg-transparent border-2 border-green-500 text-green-500 text-lg rounded-lg hover:bg-green-500 hover:text-gray-100 focus:border-4 focus:border-green-300">Success</button>
       </div>
     </div>
     <div>
@@ -27,8 +28,11 @@
         <p class="text-gray-700 mb-2">
             It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that....
         </p>
-        <div class="flex justify-between mt-4">
+        
+        <div class="flex justify-between items-center mt-4 pb-2">
           <span class="mb-2 text-gray-800 font-bold">Read more</span>
+          <button class="p-2 pl-5 pr-5 bg-transparent border-2 border-green-500 text-green-500  rounded-lg hover:bg-green-500 hover:text-gray-100 focus:border-4 focus:border-green-300">Success</button>
+
         </div>
       </div>
     </div>
@@ -40,8 +44,9 @@
         <p class="text-gray-700 mb-2">
             It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that....
         </p>
-        <div class="flex justify-between mt-4">
+        <div class="flex justify-between items-center mt-4 pb-2">
           <span class="mb-2 text-gray-800 font-bold">Read more</span>
+          <button class="p-2 pl-5 pr-5 bg-transparent border-2 border-green-500 text-green-500 rounded-lg hover:bg-green-500 hover:text-gray-100 focus:border-4 focus:border-green-300">Success</button>
         </div>
       </div>
     </div>
@@ -54,8 +59,9 @@
         <p class="text-gray-700 mb-2">
             It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that....
         </p>
-        <div class="flex justify-between mt-4">
+        <div class="flex justify-between items-center mt-4 pb-2">
           <span class="mb-2 text-gray-800 font-bold">Read more</span>
+          <button class="p-2 pl-5 pr-5 bg-transparent border-2 border-green-500 text-green-500 rounded-lg hover:bg-green-500 hover:text-gray-100 focus:border-4 focus:border-green-300">Success</button>
         </div>
       </div>
     </div>
