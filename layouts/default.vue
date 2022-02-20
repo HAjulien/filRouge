@@ -1,6 +1,7 @@
 <template>
     <div class="App">
         <HeaderMobile />
+        <HeaderDesktop />
         <Nuxt />
         <Navigation />
         <FooterMobile />
@@ -10,13 +11,14 @@
 <script>
 
 import headerMobile from '~/components/headerMobile.vue'
+import headerDesktop from '~/components/headerDesktop.vue'
 import navigation from '~/components/navigation.vue'
 import footerMobile from '~/components/footerMobile.vue'
 
 
 export default {
   name: 'AppPage',
-  components: { navigation, headerMobile, footerMobile },
+  components: { navigation, headerMobile, headerDesktop, footerMobile },
 }
 
 

@@ -8,12 +8,12 @@
 
 <script>
 
-import features from '~/components/features.vue'
 import bannerDesktop from '~/components/bannerDesktop.vue'
+import features from '~/components/features.vue'
 
 export default {
   name: 'IndexPage',
-  components: { features, bannerDesktop },
+  components: { bannerDesktop, features },
 }
 </script>
 

@@ -1,33 +1,20 @@
 <template>
-    <div id="pageDesktop" >
-        <header class="headerDesktop">
-            <img src="" alt="">
-<!-- menu grand format tablette  -->
-            <nav class="menuDesktop  ">
-                <ul class="menuLiens">
-                    <li class="menuLien "> <p class="nuxtLink"> <NuxtLink to="/">ACCUEIL</NuxtLink>  </p> </li>
-                    <li class="menuLien "> <p class="nuxtLink"> <NuxtLink to="/">MENU/TARIF</NuxtLink>  </p> </li>
-                    <li class="menuLien "> <p class="nuxtLink"> <NuxtLink to="/">L'équipe</NuxtLink>  </p> </li>
-                    <li class="menuLien "> <p class="nuxtLink"> <NuxtLink to="/">CLICK/COLLECT</NuxtLink>  </p> </li>
-                    <li class="menuLien "> <p class="nuxtLink"> <NuxtLink to="/">CAFÉ</NuxtLink>  </p> </li>
-                    <li class="menuLien "> <p class="nuxtLink"> <NuxtLink to="/">HORAIRE/LIEU</NuxtLink>  </p> </li>
-                    <li class="menuLien "> <p class="nuxtLink"> <NuxtLink to="/">CONTACT</NuxtLink>  </p> </li>
-                </ul>
-            </nav>
-        </header>
+  <div id="pageDesktop" >
+
 <!-- les images Accueil vont se succeder lors d une animation -->
-        <section class="heroBanner">
-            <div class="bigImage" id="un"></div>
-            <div class="bigImage" id="deux"></div>
-            <div class="bigImage" id="trois"></div>
-<!-- bandeau menu et header -->
-        
-        <article class="insideBigImage">
-                <h1>Cantine Miam</h1>
-                <p>Venez vivre une expérience unique. La cantine comme vous ne l'avez jamais connue!!</p>
-            </article>
-        </section>
-        </div>
+    <section class="heroBanner">
+      <div class="bigImage un"></div>
+      <div class="bigImage deux"></div>
+      <div class="bigImage trois"></div>
+
+  <!-- bandeau menu et header -->   
+      <article class="insideBigImage">
+              <h1>Cantine Miam</h1>
+              <p>Venez vivre une expérience unique. La cantine comme vous ne l'avez jamais connue!!</p>
+      </article>
+
+    </section>
+  </div>
 </template>
 
 <script>
@@ -74,17 +61,17 @@ export default {
     }
 
     /* images de fond qui vont se succéder  */
-    #un {
+    .un {
       background-image: url(~/assets/images/burgers.jpg);
       animation: thirdappear 3s 7s;
     }
 
-    #deux {
+    .deux {
       background-image: url(~/assets/images/pizza.jpg);
       animation: Secondappear 3s 4s;
     }
 
-    #trois {
+    .trois {
       background-image: url(~/assets/images/festive.jpg);
       animation: firstappear 4s;
     }
@@ -119,65 +106,6 @@ export default {
       margin: 0 30%;
       /* contour lettre en couleur */
       text-shadow: 1.5px 0 0 #534F56, 1.5px 1.5px 0 #534F56, 0 1.5px 0 #534F56, -1.5px 1.5px 0 #534F56, -1.5px 0 0 #534F56, -1.5px -1.5px 0 #534F56, 0 -1.5px 0 #534F56, 1.5px -1.5px 0 #534F56;
-    }
-
-    /* debut du menu fixe en haut */
-    .headerDesktop {
-      position: fixed;
-      top: 0;
-      height: 37px;
-      width: 100%;
-      color: #f8f8f8;
-      text-transform: lowercase;
-      background: rgba(0, 0, 0, 0.7);
-      z-index: 2;
-    }
-
-    .menuDesktop {
-      position: absolute;
-      top: 10%;
-      right: 2%;
-    }
-
-    .menuLien {
-      display: inline-block;
-      width: 10vw;
-    }
-
-    .nuxtLink {
-      display: flex;
-      justify-content: center;
-      align-content: center;
-      font-size: .9rem;
-    }
-
-    .nuxtLink:hover {
-      color: #cda673;
-      transition: all .3s ease-in-out;
-      transform: scale(1.3);
-    }
-
-   
-   
-    .menuLien:not(:last-child) {
-      border-right: 2px solid #cda673;
-    }
-
-    .menuLien::after {
-      content: "";
-      display: block;
-      margin: auto;
-      height: 4px;
-      margin-top: 5px;
-      background-color: #cda673;
-      transition: all .3s ease-in-out;
-      transform: scale(0);
-    }
-    /* barre qui apparait sous menu lors d'un hover */
-
-    .menuLien:hover::after {
-      transform: scale(0.8);
-      transition: all .3s ease-in-out;
     }
 
     /* animation titre qui se rempli */
@@ -302,18 +230,4 @@ export default {
         }
     }
 
-
-  @media screen and (min-width:766px) and (max-width:1024px) {
-
-    /* on change les tailles des case du menu */
-/* petites case pour accueil/cafe/equipe/contact */
-    .menuLien:nth-child(odd){
-        width: 10vw;
-    }
-/* grande cases pour les autres */
-    .menuLien:nth-child(even){
-        width: 15vw;
-    }
-  }
-  
 </style>
