@@ -37,7 +37,6 @@ export default {
     @media screen and (min-width:766px){
 
       body::-webkit-scrollbar{
-      all: unset;
       width: 17px;
       }
 
