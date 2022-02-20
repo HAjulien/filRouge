@@ -5,13 +5,13 @@
 <!-- menu grand format tablette  -->
             <nav class="menuDesktop  ">
                 <ul class="menuLiens">
-                    <li class="menuLien "><NuxtLink to="/" class="nuxtlink">ACCUEIL</NuxtLink></li>
-                    <li class="menuLien "><NuxtLink to="/" class="nuxtlink">MENU/TARIF</NuxtLink></li>
-                    <li class="menuLien "><NuxtLink to="/" class="nuxtlink">L'équipe</NuxtLink></li>
-                    <li class="menuLien "><NuxtLink to="/" class="nuxtlink">CLICK/COLLECT</NuxtLink></li>
-                    <li class="menuLien "><NuxtLink to="/" class="nuxtlink">CAFÉ</NuxtLink></li>
-                    <li class="menuLien "><NuxtLink to="/" class="nuxtlink">HORAIRE/LIEU</NuxtLink></li>
-                    <li class="menuLien "><NuxtLink to="/" class="nuxtlink">CONTACT</NuxtLink></li>
+                    <li class="menuLien "> <p class="nuxtLink"> <NuxtLink to="/">ACCUEIL</NuxtLink>  </p> </li>
+                    <li class="menuLien "> <p class="nuxtLink"> <NuxtLink to="/">MENU/TARIF</NuxtLink>  </p> </li>
+                    <li class="menuLien "> <p class="nuxtLink"> <NuxtLink to="/">L'équipe</NuxtLink>  </p> </li>
+                    <li class="menuLien "> <p class="nuxtLink"> <NuxtLink to="/">CLICK/COLLECT</NuxtLink>  </p> </li>
+                    <li class="menuLien "> <p class="nuxtLink"> <NuxtLink to="/">CAFÉ</NuxtLink>  </p> </li>
+                    <li class="menuLien "> <p class="nuxtLink"> <NuxtLink to="/">HORAIRE/LIEU</NuxtLink>  </p> </li>
+                    <li class="menuLien "> <p class="nuxtLink"> <NuxtLink to="/">CONTACT</NuxtLink>  </p> </li>
                 </ul>
             </nav>
         </header>
@@ -38,16 +38,16 @@ export default {
 
 <style lang="scss" scoped>
 
-
+#pageDesktop{
+  overflow-x: hidden;
+}
 .heroBanner {
       position: relative;
       height: 100vh;
       width: 100vw;
       /* petit effet parallax titre dans l'image */
-      -webkit-perspective: 1px;
-              perspective: 1px;
-      -webkit-transform-style: preserve-3d;
-              transform-style: preserve-3d;
+      perspective: 1px;
+      transform-style: preserve-3d;
     /* pour enlever les barres defilement à l'interieux image */
       overflow-y: scroll;
       overflow-x: hidden;
@@ -57,13 +57,11 @@ export default {
       position: absolute;
       height: 150vh;
       width: 100vw;
-      -webkit-transform-style: inherit;
-              transform-style: inherit;
+      transform-style: inherit;
       background-size: cover;
       background-position: center;
       /* donne effet parallax */
-      -webkit-transform: translateZ(-1px) scale(2);
-              transform: translateZ(-1px) scale(2);
+      transform: translateZ(-1px) scale(2);
     /* passe les image en arriere plan */
       z-index: -1;
     }
@@ -78,20 +76,17 @@ export default {
     /* images de fond qui vont se succéder  */
     #un {
       background-image: url(~/assets/images/burgers.jpg);
-      -webkit-animation: thirdappear 3s 7s;
-              animation: thirdappear 3s 7s;
+      animation: thirdappear 3s 7s;
     }
 
     #deux {
       background-image: url(~/assets/images/pizza.jpg);
-      -webkit-animation: Secondappear 3s 4s;
-              animation: Secondappear 3s 4s;
+      animation: Secondappear 3s 4s;
     }
 
     #trois {
       background-image: url(~/assets/images/festive.jpg);
-      -webkit-animation: firstappear 4s;
-              animation: firstappear 4s;
+      animation: firstappear 4s;
     }
 
     /* conteneur des textes dans image */
@@ -101,7 +96,6 @@ export default {
       left: 50%;
       height: 100vh;
       width: 100vw;
-      -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       text-align: center;
       color: white;
@@ -117,8 +111,7 @@ export default {
       letter-spacing: 4px;
       /* contour couleur titre */
       -webkit-text-stroke: 4px #cda673;
-      -webkit-animation: showup 3s;
-              animation: showup 3s;
+      animation: showup 3s;
     }
 
     .insideBigImage p {
@@ -150,28 +143,22 @@ export default {
       display: inline-block;
       width: 10vw;
     }
-   
-   
-    .menuLien .nuxtLink {
-      display: -webkit-box;
-      display: -ms-flexbox;
+
+    .nuxtLink {
       display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
       justify-content: center;
-      -ms-flex-line-pack: center;
       align-content: center;
-      font-size: .8rem;
+      font-size: .9rem;
     }
 
-    .menuLien .nuxtLink:hover {
+    .nuxtLink:hover {
       color: #cda673;
-      -webkit-transition: all .5s ease-in-out;
       transition: all .3s ease-in-out;
-      -webkit-transform: scale(1.3);
-              transform: scale(1.3);
+      transform: scale(1.3);
     }
 
+   
+   
     .menuLien:not(:last-child) {
       border-right: 2px solid #cda673;
     }
@@ -183,17 +170,13 @@ export default {
       height: 4px;
       margin-top: 5px;
       background-color: #cda673;
-      -webkit-transition: all .3s ease-in-out;
       transition: all .3s ease-in-out;
-      -webkit-transform: scale(0);
-              transform: scale(0);
+      transform: scale(0);
     }
     /* barre qui apparait sous menu lors d'un hover */
 
     .menuLien:hover::after {
-      -webkit-transform: scale(0.8);
-              transform: scale(0.8);
-      -webkit-transition: all .3s ease-in-out;
+      transform: scale(0.8);
       transition: all .3s ease-in-out;
     }
 
@@ -225,108 +208,90 @@ export default {
       /* animation image accueil qui se succede */
     @-webkit-keyframes firstappear {
       0% {
-        -webkit-transform: scale(1);
-                transform: scale(1);
+        transform: scale(1);
         z-index: 0;
       }
       20% {
-        -webkit-transform: scale(1);
-                transform: scale(1);
+        transform: scale(1);
         z-index: 0;
       }
       100% {
-        -webkit-transform: scale(1.1);
-                transform: scale(1.1);
+        transform: scale(1.1);
         z-index: 0;
       }
     }
 
     @keyframes firstappear {
       0% {
-        -webkit-transform: scale(1);
-                transform: scale(1);
+        transform: scale(1);
         z-index: 0;
       }
       20% {
-        -webkit-transform: scale(1);
-                transform: scale(1);
+        transform: scale(1);
         z-index: 0;
       }
       100% {
-        -webkit-transform: scale(1.1);
-                transform: scale(1.1);
+        transform: scale(1.1);
         z-index: 0;
       }
     }
 
     @-webkit-keyframes Secondappear {
       0% {
-        -webkit-transform: scale(1);
-                transform: scale(1);
+        transform: scale(1);
         z-index: 0;
       }
       20% {
-        -webkit-transform: scale(1);
-                transform: scale(1);
+        transform: scale(1);
         z-index: 0;
       }
       100% {
-        -webkit-transform: scale(1.1);
-                transform: scale(1.1);
+        transform: scale(1.1);
         z-index: 0;
       }
     }
 
     @keyframes Secondappear {
       0% {
-        -webkit-transform: scale(1);
-                transform: scale(1);
+        transform: scale(1);
         z-index: 0;
       }
       20% {
-        -webkit-transform: scale(1);
-                transform: scale(1);
+        transform: scale(1);
         z-index: 0;
       }
       100% {
-        -webkit-transform: scale(1.1);
-                transform: scale(1.1);
+        transform: scale(1.1);
         z-index: 0;
       }
     }
 
     @-webkit-keyframes thirdappear {
       0% {
-        -webkit-transform: scale(1);
-                transform: scale(1);
+        transform: scale(1);
         z-index: 0;
       }
       20% {
-        -webkit-transform: scale(1);
-                transform: scale(1);
+        transform: scale(1);
         z-index: 0;
       }
       100% {
-        -webkit-transform: scale(1.1);
-                transform: scale(1.1);
+        transform: scale(1.1);
         z-index: 0;
       }
     }
 
     @keyframes thirdappear {
       0% {
-        -webkit-transform: scale(1);
-                transform: scale(1);
+        transform: scale(1);
         z-index: 0;
       }
       20% {
-        -webkit-transform: scale(1);
-                transform: scale(1);
+        transform: scale(1);
         z-index: 0;
       }
       100% {
-        -webkit-transform: scale(1.1);
-                transform: scale(1.1);
+        transform: scale(1.1);
         z-index: 0;
       }
     }
@@ -337,5 +302,18 @@ export default {
         }
     }
 
+
+  @media screen and (min-width:766px) and (max-width:1024px) {
+
+    /* on change les tailles des case du menu */
+/* petites case pour accueil/cafe/equipe/contact */
+    .menuLien:nth-child(odd){
+        width: 10vw;
+    }
+/* grande cases pour les autres */
+    .menuLien:nth-child(even){
+        width: 15vw;
+    }
+  }
   
 </style>

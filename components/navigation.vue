@@ -29,7 +29,7 @@ export default {
 
   .navigation{
     position: sticky;
-    bottom:3%;
+    bottom:0%;
     
   }
   
