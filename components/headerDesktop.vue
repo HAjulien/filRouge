@@ -26,6 +26,7 @@ export default {
     .headerDesktop {
       display: flex;
       justify-content: flex-end;
+      align-items: center;
       position: fixed;
       top: 0;
       height: 37px;
