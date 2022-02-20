@@ -83,12 +83,12 @@ export default {
     }
 
 
-    @media screen and (max-width:766px){
+    @media screen and (max-width:767.6px){
         .headerDesktop{
           display: none;
         }
     }
-    @media screen and (min-width:766px) and (max-width:1024px) {
+    @media screen and (min-width:767.6px) and (max-width:1024px) {
 
  /* on change les tailles des case du menu */
 /* petites case pour accueil/cafe/equipe/contact */

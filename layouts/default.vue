@@ -33,4 +33,34 @@ export default {
     *::before, *::after{
       box-sizing: border-box;
     }
+
+    @media screen and (min-width:766px){
+
+      body::-webkit-scrollbar{
+      all: unset;
+      width: 17px;
+      }
+
+    /* Works on Firefox */
+      * {
+        scrollbar-width: thin;
+        scrollbar-color: $principale #bdb1ac80;
+      }
+
+    /* Works on Chrome, Edge, and Safari */
+
+
+      *::-webkit-scrollbar-track {
+        background-color: $green;
+      }
+
+      *::-webkit-scrollbar-thumb {
+        background-color: #edca82;
+        border-radius: 20px;
+        border: 4px solid #a9c0a6;
+      }
+
+    }
+
+    
 </style>
