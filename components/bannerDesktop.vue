@@ -1,5 +1,5 @@
 <template>
-    <div class="pageDesktop " >
+    <div id="pageDesktop" >
         <header class="headerDesktop">
             <img src="" alt="">
 <!-- menu grand format tablette  -->
@@ -330,5 +330,12 @@ export default {
         z-index: 0;
       }
     }
+
+    @media screen and (max-width:766px){
+        #pageDesktop{
+          display: none;
+        }
+    }
+
   
 </style>
