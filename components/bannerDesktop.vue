@@ -1,5 +1,5 @@
 <template>
-    <div class="pageDesktop  sd: hidden " >
+    <div class="pageDesktop " >
         <header class="headerDesktop">
             <img src="" alt="">
 <!-- menu grand format tablette  -->

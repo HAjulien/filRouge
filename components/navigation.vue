@@ -1,6 +1,6 @@
 <template>
 
-<ul class=" md:hidden lg:hidden navigation flex items-center justify-between bg-red-200 p-1 rounded-lg" >
+<ul class=" md:hidden navigation flex items-center justify-between bg-red-200 p-1 rounded-lg" >
   <li class="flex-1 mr-2">
     <NuxtLink to="/" class="text-center block border-blue-500 rounded py-2 px-4 bg-blue-500 hover:bg-blue-700 text-white" >Accueil </NuxtLink>
   </li>
