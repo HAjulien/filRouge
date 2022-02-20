@@ -1,6 +1,6 @@
 <template>
     <header class="headerDesktop ">
-        <img src="~assets/images/logo.png" alt=""  class="w-17 h-6 " >
+        <img src="~assets/images/logo.png" alt="Logo"  class="w-17 h-6 lg:h-8 lg:ml-3 " >
 <!-- menu grand format tablette  -->
         <nav class="menuDesktop  ">
             <ul class="menuLiens">
@@ -26,6 +26,7 @@ export default {
     .headerDesktop {
       display: flex;
       align-items: center;
+      justify-content: space-between;
       position: fixed;
       top: 0;
       height: 37px;
