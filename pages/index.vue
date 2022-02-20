@@ -1,5 +1,6 @@
 <template>
 <div>
+  <BannerDesktop/>
   <Features/>
 </div>
 
@@ -8,10 +9,11 @@
 <script>
 
 import features from '~/components/features.vue'
+import bannerDesktop from '~/components/bannerDesktop.vue'
 
 export default {
   name: 'IndexPage',
-  components: { features },
+  components: { features, bannerDesktop },
 }
 </script>
 
