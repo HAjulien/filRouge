@@ -1,19 +1,44 @@
 <template>
 <div>
-  <BannerDesktop/>
-  <Features/>
-</div>
 
+
+  <BannerDesktop/>
+   <div class="row">
+
+    <Feature v-for="(feature,index) in features" :key="index" :titre="feature.titre" :image="feature.image" :paragraphe="feature.paragraphe" :button="feature.button" />
+   </div>
+
+
+</div>
 </template>
 
 <script>
 
+import axios from 'axios'
 import bannerDesktop from '~/components/bannerDesktop.vue'
-import features from '~/components/features.vue'
+import feature from '~/components/feature.vue'
 
 export default {
   name: 'IndexPage',
-  components: { bannerDesktop, features },
+  components: { bannerDesktop, feature },
+
+  data(){
+        return {
+            features:[],
+            errors: []
+        }
+  },
+  // Fetches posts when the component is created.
+  created() {
+    axios.get(`http://localhost:3000/features.json`)
+    .then(response => {
+      // JSON responses are automatically parsed.
+      this.features = response.data.features
+    })
+    .catch(e => {
+      this.errors.push(e)
+    })
+  },
 
    head: {
     title: "MIAM | Nouvelle Cantine de l'AFPA de Créteil",
@@ -25,8 +50,8 @@ export default {
       }
     ]
   }
-  
 }
+  
 </script>
 
 <style lang="scss" >
