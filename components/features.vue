@@ -73,7 +73,6 @@
 
 <script>
 export default {
-    name: 'FeaturesHome',
 }
 </script>
 
