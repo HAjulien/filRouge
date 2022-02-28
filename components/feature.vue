@@ -33,22 +33,12 @@ export default {
 
     props: {
 
-      titre:{
-        type:String, 
-        default:""},
-        
-      image:{
-        type:String, 
-        default:""},
+      titre:String,
+      image:String,
+      button:String,
+      paragraphe:String,
 
-      paragraphe:{
-        type:String, 
-        default:""}, 
-
-      button:{
-        type:String, 
-        default:""} 
-  }
+    }
 }
 </script>
 
