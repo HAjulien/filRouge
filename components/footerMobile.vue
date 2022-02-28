@@ -12,7 +12,7 @@
         <p class="text-center">CANTINE MIAM tous droits réservés, 2022</p>
         <div>
             <transition name="bounce">
-            <p v-show="active" class="test"><HeaderMobile /></p>
+            <p v-show="active" ><HeaderMobile /></p>
             </transition>
             <button @click="active = !active" >Toggle active</button>
         </div>
